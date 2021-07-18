@@ -267,9 +267,20 @@ export default function(editor, opt = {}) {
     bm.add('map', {
       label: c.labelMap,
       category: c.category,
-      attributes: { class: 'fa fa-map-o' },
+      attributes: { class: 'fa fa-map' },
       content: {
         type: 'map',
+        style: { height: '350px' }
+      }
+    });
+
+  toAdd('artwork-presenter') &&
+    bm.add('artwork-presenter', {
+      label: c.labelArtworkPresenter,
+      category: c.category,
+      attributes: { class: 'fa fa-paint-brush' },
+      content: {
+        type: 'artwork-presenter',
         style: { height: '350px' }
       }
     });

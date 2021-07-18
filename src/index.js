@@ -11,7 +11,8 @@ export default grapesjs.plugins.add('gjs-blocks-basic', (editor, opts = {}) => {
       'link',
       'image',
       'video',
-      'map'
+      'map',
+      'artwork-presenter'
     ],
     flexGrid: 0,
     stylePrefix: 'gjs-',
@@ -26,6 +27,7 @@ export default grapesjs.plugins.add('gjs-blocks-basic', (editor, opts = {}) => {
     labelImage: 'Image',
     labelVideo: 'Video',
     labelMap: 'Map',
+    labelArtworkPresenter: 'Artwork Presenter',
     rowHeight: 75,
     ...opts
   };
